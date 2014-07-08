@@ -48,9 +48,14 @@ nav{
 	width: 100%;
 	border-top: 1px solid hsl(0, 0%, 100%);
 }
-nav td:first-child{border-left: 1px solid hsl(0, 0%, 100%);}
+nav table{
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-color: hsl(0, 0%, 100%);
+}
+nav tr td:last-child{border-right: 1px solid hsl(0, 0%, 100%);}
 nav td{
-	border-right:2px solid hsl(0, 0%, 100%);
+	border-left:1px solid hsl(0, 0%, 100%);
 	padding: 0;
 }
 .navButton{display: block;}
@@ -61,11 +66,11 @@ nav td{
 #midPage .navButton:hover, #midPage .socialMedia a:hover{
 	color: hsl(0, 100%, 0%);
 }
-.blog:before{content: '\f471';}
+.git:before{content: '\f417';}
 .twitter:before{content: '\f202';}
 .facebook:before{content: '\f204';}
 .google:before{content: '\f218';}
-.blog:before, .facebook:before, nav{border-bottom: 1px solid hsl(0, 0%, 100%);}
+.git:before, .facebook:before, nav{border-bottom: 1px solid hsl(0, 0%, 100%);}
 
 /*	Top page	*/
 #title{
@@ -78,50 +83,16 @@ section{
 }
 
 /*	Middle page	*/
-#categories input[type="radio"]{display:none;}
-#categories input[type="radio"]:checked+label{box-shadow: 0px 0px 10px 5px hsl(0, 10%, 100%) !important;}
-.bar{
-	cursor: pointer;
-	background-color: hsl(0, 10%, 100%);
-	border-radius: 5px;
-}
-#frame{
-	overflow-x:	scroll;
-	z-index: 15;
-}
-#slideShow{
-	white-space:nowrap;
-}
-.overlay{
-	filter: saturate(20%);
-	-webkit-filter: saturate(20%);
-	-moz-filter: saturate(20%);
-	-o-filter: saturate(20%);
-	-ms-filter: saturate(20%);
-}
-
-/*	Arrows	*/
-#leftGalShader, #rightGalShader, #leftArrow, #rightArrow{
-	cursor: pointer;
-	position: absolute;
-	z-index: 5;
-}
-#leftGalShader:active + #leftArrow, #rightGalShader:active + #rightArrow{
-	border-left-color: hsl(0, 100%, 60%);
-	border-right-color: hsl(0, 100%, 60%);
-}
-#leftGalShader, #rightGalShader{
-	z-index: 10;
-	background-color: hsla(0, 0%, 0%, .5);
-}
 
 /*	Bottom Page	*/
-#eError{text-align: center;}
 form textarea, form input{border: none;}
 form label{
 	display: inline-block;
 	font-weight: bold;
 	padding-bottom: 4px;
+}
+#testImage{
+	float: right;
 }
 form button{
 	background-color: hsl(0, 0%, 100%);
@@ -138,4 +109,3 @@ form button:active{
 	color: hsl(0, 0%, 100%);
 	border: 2px solid hsl(0, 0%, 100%);
 }
-body > div:nth-last-child(2), #window-resizer-tooltip, #pluginIdTFPU_2{display:none !important;}

@@ -1,7 +1,7 @@
 body{font-size: 80%;}
 #topPage, #botPage, #midPage{padding-top: 10px;}
 p{padding: 10px 0;}
-.container{padding: 10px;}
+.container{padding:0 10px;}
 .header{
 	font-size: 400%;
 	letter-spacing: 0.18em;
@@ -13,7 +13,7 @@ nav{
 	margin: 0 0 2vh 0;
 }
 .navButton{
-	line-height: 36px;
+	line-height: 39px;
 	padding: 0 18px;
 }
 .socialMedia{font: normal 18px 'Genericons';}
@@ -32,10 +32,14 @@ section{
 	font-size: 150%;
 	margin: 3vh 0;
 }
+
 #qualifications img{
-	height: 16vh;
+	vertical-align: top;
+	display: inline-block;
+	width: 10%;
 	padding: 2vh 5px;
 }
+
 hr{margin: 4vh 0;}
 
 /*	Middle page	*/
@@ -44,44 +48,12 @@ hr{margin: 4vh 0;}
 	padding: 3px 5px;
 	color: hsl(0, 0%, 0%);
 }
-#categories{
-		margin: 20px 0 40px 0;
-		display: none;
-}
-#frame{width: 100vw;}
-.slideShow{
-	margin: 0px 1px;
-	border: 2px solid hsl(0, 100%, 35%);
-	height: 65vh;
-}
-
-/*	Arrows	*/
-#leftArrow, #rightArrow{
-	margin-top: 30vh;
-	border-top: 3vh solid transparent;
-	border-bottom: 3vh solid transparent;
-}
-#leftArrow{
-	left: 3px;
-	border-right: 5vh solid hsl(0, 100%, 35%);
-}
-#rightArrow{
-	right: 3px;
-	border-left: 5vh solid hsl(0, 100%, 35%);
-}
-#leftGalShader, #rightGalShader{
-	height: 65.5vh;
-	width: 6vh;
-}
-#leftGalShader{left: 0px;}
-#rightGalShader{right: 0px;}
 
 /*	Bottom Page	*/
 form{
 	margin: 0 1%;
 }
 form label{
-	width: 100px;
 	display: block;
 }
 form > div{margin: 2vh 0;}
@@ -89,7 +61,11 @@ form label + input, textarea{
 	width: 100%;
 	max-width: 100%;}
 form label{font-size: 100%;}
+form input{
+padding:2px 5px;}
 textarea{height: 80px;}
+
+#field_5{width:75%;}
 
 /*	Dynamic Stuff	*/
 @media (min-height: 600px){
@@ -104,29 +80,10 @@ textarea{height: 80px;}
 @media (min-height: 800px){
 
 	/*	Top Page */
-	#qualifications img{height: 150px;}
 	body{font-size: 110%;}
 }
 @media (min-height: 1000px){
 
 	/*	Top Page */
-	body{font: 120%;}
-}
-
-@media (min-width: 950px){
-
-	/*	Middle Page	*/
-	#galMarLeft{margin-left: 10% !important;}
-	#galMarRight{margin-right: 10% !important;}
-}
-@media (min-width: 1500px){
-
-	/*	Middle Page	*/
-	#galMarLeft{margin-left: 25% !important;}
-	#galMarRight{margin-right: 25% !important;}
-}
-@media (min-width: 1900px){
-	/*	Middle Page	*/
-	#galMarLeft{margin-left: 30% !important;}
-	#galMarRight{margin-right: 30% !important;}
+	body{font-size: 120%;}
 }
