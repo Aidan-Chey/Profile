@@ -30,16 +30,14 @@
 
 .genericon {
 	display: inline-block;
-	width: 16px;
-	height: 16px;
+	width: 100%;
 	-webkit-font-smoothing: antialiased;
-	font-size: 16px;
-	line-height: 1;
+	font-size: 100%;
+	line-height: 19px;
 	font-family: 'Genericons';
 	text-decoration: inherit;
 	font-weight: normal;
 	font-style: normal;
-	vertical-align: top;
 }
 
 /**
@@ -53,9 +51,7 @@
 }
 
 /* Social icons */
-.genericon-github:before {          content: '\f200'; }
-.genericon-twitter:before {         content: '\f202'; }
-.genericon-facebook-alt:before {    content: '\f204'; }
-.genericon-googleplus-alt:before {  content: '\f218'; }
-
-.genericon-location:before {        content: '\f417'; }
+.github:before {		content: '\f200'; }
+.facebook:before {		content: '\f204'; }
+.googleplus:before {	content: '\f218'; }
+.codepen:before {		content: '\f216'; }

@@ -11,6 +11,7 @@ body{
 	margin: 0;
 	padding: 0;
 	color: hsl(0, 0%, 100%);
+	-webkit-font-smoothing: antialiased;
 }
 @font-face{
 	font-family: Mesquite Free;
@@ -66,11 +67,7 @@ nav td{
 #midPage .navButton:hover, #midPage .socialMedia a:hover{
 	color: hsl(0, 100%, 0%);
 }
-.git:before{content: '\f417';}
-.twitter:before{content: '\f202';}
-.facebook:before{content: '\f204';}
-.google:before{content: '\f218';}
-.git:before, .facebook:before, nav{border-bottom: 1px solid hsl(0, 0%, 100%);}
+.googleplus, .facebook, nav{border-bottom: 1px solid hsl(0, 0%, 100%); /* line-height: 19px !important; */}
 
 /*	Top page	*/
 #title{
@@ -83,6 +80,39 @@ section{
 }
 
 /*	Middle page	*/
+#midPage section{
+	text-align: center;
+	margin: 1em 0;
+	padding: 0;
+}
+#midPage article{
+	display: inline-block;
+	margin: .5em auto;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 250;
+	height: 250;
+}
+#midPage article img{
+	background-color: yellow;
+	width: 100%;
+	height: calc(100% - 2em);
+}
+#midPage article a:last-child{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 120%;
+	font-family: tahoma;
+	background-color: lightgreen;
+	margin-top: 2px;
+	line-height: 2em;
+}
+@media(min-width: 635px){
+	#midPage article{margin: 1em;}	
+	#midPage section{padding: 1em;}
+}
 
 /*	Bottom Page	*/
 form textarea, form input{border: none;}
