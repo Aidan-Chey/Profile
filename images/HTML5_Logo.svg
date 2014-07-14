@@ -1,7 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg viewBox="0 0 452 520" xmlns="http://www.w3.org/2000/svg">
-	<title>HTML5 Logo Badge</title>
 	<path fill='RGB(227,79,38)' d='M 41,460 L 0,0 451,0 410,460 225,512'/>
 	<path fill='RGB(239,101,42)' d='M 226,472 L 375,431 410,37 226,37'/>
 	<path fill='RGB(236,237,238)' d='M 226,208 L 151,208 146,150 226,150 226,94 84,94 99,265 226,265 z M 226,355 L162,338 158,293 102,293 109,382 226,414 z'/>

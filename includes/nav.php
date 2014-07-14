@@ -1,5 +1,4 @@
 <table class="container">
-<tbody>
 	<tr>
 		<td rowspan="2"><a class="navButton" href="#home">Home</a></td>
 		<td rowspan="2"><a class="navButton" href="#portfolio">Portfolio</a></td>
@@ -11,5 +10,4 @@
 	    <td class="socialMedia"><a href="https://github.com/Aidan-Chey" title="Github" class="genericon github" target="_blank"></a></td>
 	    <td class="socialMedia"><a href="http://codepen.io/Talnar" title="CodePen" class="genericon codepen" target="_blank"></a></td>
 	</tr>
-</tbody>
 </table>

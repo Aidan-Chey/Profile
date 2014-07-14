@@ -4,18 +4,26 @@
     <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php'; ?>
   </nav>
   <div class="header">Portfolio</div>
-  <p>click the labels to go to the site</p>
   <section>
     <?php 
       $files = scandir($_SERVER['DOCUMENT_ROOT'].'/images/gallery/');
       $images = array_diff($files, array('.', '..'));
-      print_r($images);
-      foreach($images as $key => $value): ?>
+      foreach($images as $key => $image): 
+       $name = substr($image, 0, -4); ?>
       <article>
-        <a href="/images/gallery/<?php echo $value; ?>"><img style="background-image:url('/images/gallery/<?php echo $value; ?>'); 
-            width: 200px; height: 200px;"></a>
-        <a href="#placeholder">Site</a>
+        <div style="background-image:url('/images/gallery/<?php echo $image; ?>')" onClick="largeImage('<?php echo $image; ?>')"></div>
+        <a href="http://examples.aidancheyd.info/<?php echo $name; ?>"><?php echo "Site - ".$name; ?></a>
       </article>
     <?php endforeach; ?>
   </section>
+  <input type="checkbox" class="hide" id="hideOverlay">
+  <label id="overlay" for="hideOverlay">
+    <img id="large" alt="A larger image of it's gallery counterpart." />
+  </label>
+  <script type="text/javascript" async>
+    function largeImage(image){
+      document.getElementById('large').src = '/images/Large/'+image;
+      document.getElementById('hideOverlay').checked = 'true';
+    }
+  </script>
 </div>

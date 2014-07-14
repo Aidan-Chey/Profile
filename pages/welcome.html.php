@@ -4,7 +4,7 @@
     <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php'; ?>
   </nav>
   <div id="title">
-    Aidan Chey D
+    Aidan Dunn
   </div>
   <p class="textCenter intro">
     Hey There!<br>Looks like you found my website.<br>Well, seeing as you're here...
