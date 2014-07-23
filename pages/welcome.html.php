@@ -4,7 +4,7 @@
     <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php'; ?>
   </nav>
   <div id="title">
-    Aidan Dunn
+    <img src="/images/Text/AidanDunn.svg" style="max-width: 550px; width: 100%;"  alt="Aidan Dunn" onError="this.onerror=null;this.src='/images/Text/AidanDunn.png';">
   </div>
   <p class="textCenter intro">
     Hey There!<br>Looks like you found my website.<br>Well, seeing as you're here...
@@ -20,20 +20,19 @@
   </p>
   <div id="qualifications" class="textCenter">
     <a href="http://en.wikipedia.org/wiki/HTML5" target="_blank">
-      <img src="/images/HTML5_Logo.svg" alt="HTML5"  onError="this.onerror=null;this.src='/images/HTML5_Logo.png';">
+      <img src="/images/Logo/HTML5_Logo.svg" alt="HTML5" style="max-width: 150px; width: 12%; min-width: 70px;" onError="this.onerror=null;this.src='/images/Logo/HTML5_Logo.png';">
     </a>
     <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">
-      <img src="/images/CSS3_Logo.svg" alt="CSS3"  onError="this.onerror=null;this.src='/images/CSS3_Logo.png';">
+      <img src="/images/Logo/CSS3_Logo.svg" alt="CSS3" style="max-width: 150px; width: 12%; min-width: 70px;" onError="this.onerror=null;this.src='/images/Logo/CSS3_Logo.png';">
     </a>
     <a href="http://en.wikipedia.org/wiki/CSS" target="_blank">
-      <img src="/images/JS_Logo.svg" alt="JavaScript"  onError="this.onerror=null;this.src='/images/JS_Logo.png';">
+      <img src="/images/Logo/JS_Logo.svg" alt="JavaScript" style="max-width: 150px; width: 12%; min-width: 70px;" onError="this.onerror=null;this.src='/images/Logo/JS_Logo.png';">
     </a>
     <a href="http://www.photoshop.com/products/photoshop" target="_blank">
-      <img src="/images/Photoshop_CS6_Logo.svg" alt="Photoshop"  onError="this.onerror=null;this.src='/images/Photoshop_CS6_Logo.png';">
+      <img src="/images/Logo/Photoshop_CS6_Logo.svg" alt="Photoshop" style="max-width: 150px; width: 12%; min-width: 70px;" onError="this.onerror=null;this.src='/images/Logo/Photoshop_CS6_Logo.png';">
+    </a>
+    <a href="http://en.wikipedia.org/wiki/PHP" target="_blank"><!-- http://en.wikipedia.org/wiki/MySQL -->
+      <img src="/images/Logo/PhpMySQL_logo.svg" alt="PhP & MySQL" style="max-width: 250px; width: 14%; min-width: 120px;" onError="this.onerror=null;this.src='/images/Logo/PhpMySQL_logo.png';">
     </a>
   </div>
-  <hr class="intro">
-  <p class="textCenter intro">
-    <a href="TestDev/Index.html" target="_blank">Testing and Development Section</a>
-  </p>
 </div>

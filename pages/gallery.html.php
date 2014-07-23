@@ -3,7 +3,9 @@
   <nav>
     <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php'; ?>
   </nav>
-  <div class="header">Portfolio</div>
+  <div class="header">
+    <img src="/images/Text/Portfolio.svg" style="max-width: 495px; width: 100%;" alt="Portfolio" onError="this.onerror=null;this.src='/images/Text/Portfolio.png';">
+  </div>
   <section>
     <?php 
       $files = scandir($_SERVER['DOCUMENT_ROOT'].'/images/gallery/');
@@ -12,7 +14,7 @@
        $name = substr($image, 0, -4); ?>
       <article>
         <div style="background-image:url('/images/gallery/<?php echo $image; ?>')" onClick="largeImage('<?php echo $image; ?>')"></div>
-        <a href="http://examples.aidancheyd.info/<?php echo $name; ?>"><?php echo "Site - ".$name; ?></a>
+        <a href="http://examples.aidancheyd.info/<?php echo $name; ?>"><?php echo $name; ?></a>
       </article>
     <?php endforeach; ?>
   </section>

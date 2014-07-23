@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('NZ');
 include $_SERVER['DOCUMENT_ROOT'].'/includes/magicQuotes.inc.php';
 include $_SERVER['DOCUMENT_ROOT'].'/includes/helpers.inc.php';
 
@@ -35,11 +36,11 @@ if(isset($_POST['mail'])){
 	}
 
 	//validate human test
-	if(empty($_POST['test'])){
+	/*if(empty($_POST['test'])){
 		$errors['test'] .= " Please complete the human test.";
 	}elseif($_POST['test'] != "computer"){
 		$errors['test'] .= " Incorrect answer; Hint: comp...";
-	}
+	}*/
 
 	if(empty($errors)){
 		//Prepare the mail

@@ -9,6 +9,7 @@
   <meta name="keywords" content="Aidan Dunn, Profile, Gallary, Contact, Portfolio, Website, Web Development, Frontend, Hypertext Markup language, HTML5, Javascript, JS, Cascading Style Sheets, CSS, Photoshop, PS, Backend, PHP: Hypertext Preprocessor, Php, Structured Query Language, SQL">
   <link rel="stylesheet" type="text/css" href="/style.css"/>
   <link href="font/genericons.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/images/Favicon.png" />
   <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
   <![endif]-->

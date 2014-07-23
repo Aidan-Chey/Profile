@@ -3,7 +3,9 @@
   <nav>
     <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php'; ?>
   </nav>
-  <div class="header">Contact</div>
+  <div class="header">
+    <img src="/images/Text/Contact.svg" style="max-width: 384px; width: 100%;" alt="Contact" onError="this.onerror=null;this.src='/images/Text/Contact.png';">
+  </div>
   <?php if(isset($_SESSION['messages'])): ?>
     <h3 class="textCenter">
       <?php echo $_SESSION['messages']; ?>
@@ -27,12 +29,12 @@
       <label for="field_4">Message: </label>
       <textarea name="message" id="field_4"><?php if(!empty($_POST['message'])){echo$_POST['message'];} ?></textarea>
     </div>
-    <img id="testImage" src="/images/test_image.png">
+    <!-- <img id="testImage" src="/images/test_image.png">
     <div>
       <label for="field_5">Human Test: What is this picture of? (use lowercase)</label>
       <input name="test" id="field_5" placeholder="com..." value="<?php if(!empty($_POST['test'])){echo$_POST['test'];} ?>">
       <?php if(!empty($errors['test'])){echo"<br><span class='error'>".$errors['test']."</span>";} ?>
-    </div>
+    </div> -->
     <div class="textCenter"><button name="mail">Submit</button></div>
   </form>
 </div>
