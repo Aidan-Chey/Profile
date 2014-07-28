@@ -1,11 +1,10 @@
-<a name="home"></a>
-<div id="topPage">
+<div id="home">
   <nav>
     <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php'; ?>
   </nav>
-  <div id="title">
+  <h1 id="title">
     <img src="/images/Text/AidanDunn.svg" style="max-width: 550px; width: 100%;"  alt="Aidan Dunn" onError="this.onerror=null;this.src='/images/Text/AidanDunn.png';">
-  </div>
+  </h1>
   <p class="textCenter intro">
     Hey There!<br>Looks like you found my website.<br>Well, seeing as you're here...
   </p>

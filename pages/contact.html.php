@@ -1,11 +1,10 @@
-<a name="contact"></a>
-<div id="botPage">
+<div id="contact">
   <nav>
     <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/nav.php'; ?>
   </nav>
-  <div class="header">
+  <h2 class="header">
     <img src="/images/Text/Contact.svg" style="max-width: 384px; width: 100%;" alt="Contact" onError="this.onerror=null;this.src='/images/Text/Contact.png';">
-  </div>
+  </h2>
   <?php if(isset($_SESSION['messages'])): ?>
     <h3 class="textCenter">
       <?php echo $_SESSION['messages']; ?>
@@ -13,13 +12,13 @@
   <?php endif; ?>
   <form action="#contact" method="post" class="container">
     <div>
-      <label for="field_2">Email: </label>
-      <input type="email" name="email" id="field_2" placeholder="Required" required value="<?php if(!empty($_POST['email'])){echo$_POST['email'];} ?>">
+      <label for="field_1">Email: </label>
+      <input type="email" name="email" id="field_1" placeholder="Required" required value="<?php if(!empty($_POST['email'])){echo$_POST['email'];} ?>">
       <?php if(!empty($errors['email'])){echo"<br><span class='error'>".$errors['email']."</span>";} ?>
     </div>
     <div>
-      <label for="field_1">Name: </label>
-      <input type="text" name="name" id="field_1" value="<?php if(!empty($_POST['name'])){echo$_POST['name'];} ?>">
+      <label for="field_2">Name: </label>
+      <input type="text" name="name" id="field_2" value="<?php if(!empty($_POST['name'])){echo$_POST['name'];} ?>">
     </div>
     <div>
       <label for="field_3">Subject: </label>

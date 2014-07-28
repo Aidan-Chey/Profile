@@ -14,9 +14,9 @@ body{
 .textCenter, #title, .header{text-align: center;}
 .elementCenter, #slideShow, .container{margin: 0 auto;}
 .container{max-width: 700px;}
-#topPage, #botPage{min-height:100vh;}
-#midPage{min-height:100vh;}
-#topPage, #botPage{background-color: hsl(0, 100%, 35%);}
+#home, #contact{min-height:100vh;}
+#portfolio{min-height:100vh;}
+#home, #contact{background-color: hsl(0, 100%, 35%);}
 p a{border-bottom: 1px solid hsl(0, 0%, 100%);}
 p{margin: 1vh 0;}
 nav a, p a{
@@ -64,7 +64,7 @@ nav td{
 	background-color: hsl(0, 0%, 100%);
 	color: hsl(0, 100%, 35%);
 }
-#midPage .navButton:hover, #midPage .socialMedia a:hover{
+#portfolio .navButton:hover, #portfolio .socialMedia a:hover{
 	color: hsl(0, 100%, 0%);
 }
 .googleplus, .facebook, nav{border-bottom: 1px solid hsl(0, 0%, 100%);}
@@ -72,22 +72,22 @@ nav{
 	letter-spacing: 0.05em;
 	margin: 0 0 2vh 0;
 }
+h1, h2{margin: 2vh 0;}
 
 /*	Top page	*/
 #title{
 	background-color: hsl(0, 0%, 100%);
 	color: hsl(0, 0%, 0%);
 	white-space: nowrap;
-	padding-top: 8px;
+	padding-top: 10px;
 	font-size: 4em;
-	margin-bottom: 2vh;
 }
 section{
 	padding: 2vh 0;
 	font-size: 150%;
 	margin: 3vh 0;
 }
-#topPage section{
+#home section{
 	border-top: 1px solid hsl(0,0%,100%);
 	border-bottom: 1px solid hsl(0,0%,100%);
 }
@@ -99,15 +99,12 @@ hr{margin: 4vh 0;}
 	padding: 2vh 5px;
     border: none;
 }
-
-}
 #qualifications a{
 	text-decoration: none;
 }
 
-
 /*	Middle page	*/
-#midPage section{
+#portfolio section{
 	text-align: center;
 	margin: 1em 0;
 	padding: 0;
@@ -115,15 +112,15 @@ hr{margin: 4vh 0;}
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-#midPage article{
+#portfolio article{
 	display: inline-block;
 	text-align: center;
 	margin: .5em auto;
 }
-#midPage article a, #midPage article div{
+#portfolio article a, #portfolio article div{
 	display: block;
 }
-#midPage article div{
+#portfolio article div{
 	background-color: hsl(0, 0%, 0%);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -131,7 +128,7 @@ hr{margin: 4vh 0;}
 	width: 250px;
 	height: 230px;
 }
-#midPage article a{
+#portfolio article a{
 	text-decoration: none;
 	color: hsl(0, 0%, 100%);
 	font-size: 90%;
@@ -173,8 +170,8 @@ hr{margin: 4vh 0;}
 	opacity: 1;
 }
 @media(min-width: 635px){
-	#midPage article{margin: 1em;}	
-	#midPage section{padding: 1em;}
+	#portfolio article{margin: 1em;}	
+	#portfolio section{padding: 1em;}
 }
 
 /*	Bottom Page	*/
@@ -204,7 +201,6 @@ form button:active{
 	border:2px solid hsl(0,0%, 100%);
 }
 body{font-size:80%;}
-#topPage,#botPage,#midPage{padding-top: 10px;}
 p{padding:10px 0;}
 .container{padding:0 10px;}
 .header{
