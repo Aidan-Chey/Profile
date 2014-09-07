@@ -1,5 +1,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="520" height="405" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 520 405" width="520" height="405">
   <path
      fill="hsl(0,0%,100%)"
      d="M 3.5,35.749997 3.5,298 c 0,30 0.279045,30 30.625,30 l 391.75,0 c 33.625,0 33.625,0 33.625,-29.875 l 0,-262.125003 C 459.5,7.5 459.5,7.5 425.875,7.5 L 34,7.5 C 3.5,7.5 3.5,7.5 3.5,35.749997 z" />

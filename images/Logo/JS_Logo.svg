@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="452" height="520" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 452 520" width="452" height="520">
 	<title>Javascript Logo Badge</title>
 	<path fill='RGB(229,162,40)' d='M 0,0 L 451,0 410,460 225,512 41,460'/>
     <path fill='RGB(241,191,38)' d='M 226,472 L375,431 410,37 226,37'/>
