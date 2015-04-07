@@ -18,11 +18,7 @@
 <body>
 	<?php include $_SERVER['DOCUMENT_ROOT'].'/pages/welcome.html.php'; ?>
 
-	<div id="gradDown"></div>
-
 	<?php include $_SERVER['DOCUMENT_ROOT'].'/pages/gallery.html.php'; ?>
-
-	<div id="gradUp"></div>
 
 	<?php include $_SERVER['DOCUMENT_ROOT'].'/pages/contact.html.php'; ?>
 </body>

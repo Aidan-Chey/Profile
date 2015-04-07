@@ -20,7 +20,7 @@ if(isset($_POST['mail'])){
 
 	//validate subject
 	if(empty($_POST['subject']) && $_POST['subject'] = " "){
-		$subject = "[Subject Not Specified]";		
+		$subject = "[Subject Not Specified]";
 	}else{
 		$subject = html($_POST['subject']);
 	}
@@ -44,7 +44,7 @@ if(isset($_POST['mail'])){
 
 	if(empty($errors)){
 		//Prepare the mail
-		$to = "aidan.inquires@gmail.com";
+		$to = "aidan.inquires+profile@gmail.com";
 
 		$header  = "From: noreply@profile.aidancheyd.info" . "\r\n" .
 		"X-Mailer:PHP/" . phpversion() . "\r\n" .
@@ -52,10 +52,10 @@ if(isset($_POST['mail'])){
 
 
 		// Send the email
-		if(mail($to, $subject, $message, $header)){
+		try {
+			mail($to, $subject, $message, $header);
 			$_SESSION['messages'] = "Your enquiry has been sent.<br>Thank you.";
-		}
-		else{
+		} catch (Exception $e) {
 			$_SESSION['messages'] = "Email failed.<br>Your enquiry was not sent.";
 		}
 	}

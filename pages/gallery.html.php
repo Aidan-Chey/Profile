@@ -49,14 +49,14 @@
 		</article>
 		<?php endforeach; ?>
 	</section>
-	<input type="checkbox" class="hide" id="hideOverlay">
+	<input type="checkbox" class="hide" id="hideOverlay" checked>
 	<label id="overlay" for="hideOverlay">
 		<img id="large" alt="A larger image of it's gallery counterpart." />
 	</label>
 	<script type="text/javascript">
 		function largeImage(image){
 			document.getElementById('overlay').innerHTML = "<img id='large' src='/images/Large/"+image+"' alt='A larger image of it's gallery counterpart.' />";
-			document.getElementById('hideOverlay').checked = 'true';
+			document.getElementById('hideOverlay').checked = false;
 		}
 	</script>
 </div>

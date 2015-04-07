@@ -1,5 +1,6 @@
 body{
 font-size:17px;
+font-family:sans-serif;
 background-color:hsl(0, 0%, 0%);
 width:100%;
 -webkit-box-sizing:border-box; /* Safari/Chrome, other WebKit */
@@ -11,10 +12,25 @@ padding:0;
 color:hsl(0, 0%, 100%);
 -webkit-font-smoothing:antialiased;
 }
+body>div{min-height: 100vh;}
+#home{
+background:-khtml-linear-gradient(top,hsl(0, 100%, 35%) 92%,hsl(0,0%,0%));
+background:-webkit-linear-gradient(top,hsl(0, 100%, 35%) 92%,hsl(0,0%,0%));
+background:-o-linear-gradient(top,hsl(0, 100%, 35%) 92%,hsl(0,0%,0%));
+background:-moz-linear-gradient(top,hsl(0, 100%, 35%) 92%,hsl(0,0%,0%));
+background:linear-gradient(top,hsl(0, 100%, 35%) 92%,hsl(0,0%,0%));
+}
+#portfolio{
+background:-khtml-linear-gradient(top,hsl(0,0%,0%) 92%,hsl(0, 100%, 35%));
+background:-webkit-linear-gradient(top,hsl(0,0%,0%) 92%,hsl(0, 100%, 35%));
+background:-o-linear-gradient(top,hsl(0,0%,0%) 92%,hsl(0, 100%, 35%));
+background:-moz-linear-gradient(top,hsl(0,0%,0%) 92%,hsl(0, 100%, 35%));
+background:linear-gradient(top,hsl(0,0%,0%) 92%,hsl(0, 100%, 35%));
+}
 .textCenter, #title, .header{text-align:center;}
 .elementCenter, #slideShow, .container{margin:0 auto;}
 .container{max-width:700px;}
-#home, #contact{min-height:100vh;}
+#contact{min-height:100vh;}
 #portfolio{min-height:100vh;}
 #home, #contact{background-color:hsl(0, 100%, 35%);}
 p a{border-bottom:1px solid hsl(0, 0%, 100%);}
@@ -24,18 +40,6 @@ color:hsl(0, 0%, 100%);
 text-decoration:none;
 }
 .header, #title{font-family:Mesquite Free, serif;}
-#gradDown, #gradUp{height:80px;}
-#gradDown{
-background:-webkit-linear-gradient(hsl(0, 100%, 35%), hsl(0, 0%, 0%)); /* For Safari */
-background:-o-linear-gradient(hsl(0, 100%, 35%), hsl(0, 0%, 0%)); /* For Opera 11.1 to 12.0 */
-background:-moz-linear-gradient(hsl(0, 100%, 35%), hsl(0, 0%, 0%)); /* For Firefox 3.6 to 15 */
-background:linear-gradient(hsl(0, 100%, 35%), hsl(0, 0%, 0%)); /* Standard syntax */
-}
-#gradUp{
-background:-webkit-linear-gradient(hsl(0, 0%, 0%), hsl(0, 100%, 35%)); /* For Safari */
-background:-o-linear-gradient(hsl(0, 0%, 0%), hsl(0, 100%, 35%)); /* For Opera 11.1 to 12.0 */
-background:-moz-linear-gradient(hsl(0, 0%, 0%), hsl(0, 100%, 35%)); /* For Firefox 3.6 to 15 */
-background:linear-gradient(hsl(0, 0%, 0%), hsl(0, 100%, 35%)); /* Standard syntax */
 }
 
 /* navigation */
@@ -124,11 +128,11 @@ font-size:4em;
 section{
 padding:2vh 0;
 font-size:150%;
-margin:3vh 0;
 }
 #home section{
 border-top:1px solid hsl(0,0%,100%);
 border-bottom:1px solid hsl(0,0%,100%);
+margin:3vh 0;
 }
 .intro{display:none;}
 hr{margin:4vh 0;}
@@ -188,30 +192,20 @@ position:fixed;
 display:inline-block;
 max-width:100%;
 max-height:100%;
-background-color:hsl(0,100%,35%);
 }
 #overlay{
 cursor:pointer;
 z-index:5;
 text-align:center;
-opacity:0;
+line-height: 100vh;
 top:0;
 left:0;
 width:100%;
-height:100vh;
-background-color:hsla(0, 0%, 0%, .5);
--webkit-transition:opacity 1s ease-in-out;
--moz-transition:opacity 1s ease-in-out;
--ms-transition:opacity 1s ease-in-out;
--o-transition:opacity 1s ease-in-out;
-transition:opacity 1s ease-in-out;
-}
-.hide,#overlay{
-display:none;
-}
-.hide:checked~#overlay{
 display:block;
-opacity:1;
+background-color:hsla(0, 0%, 0%, .5);
+}
+.hide:checked~#overlay,.hide{
+display:none !important;
 }
 #portfolio>a{
 text-decoration:none;
@@ -291,7 +285,8 @@ bottom:0;
 /* Dynamic Stuff */
 @media (min-width:355px){
 	.mobileNav{display: none;}
-	nav{border-bottom:1px solid hsl(0, 0%, 100%);}
+	nav{border-bottom:1px solid hsl(0, 0%, 100%);
+		border-top:1px solid hsl(0, 0%, 100%);}
 	nav table{display:block;}
 }
 @media (min-width:635px){
@@ -311,7 +306,6 @@ bottom:0;
 }
 @media (min-height:800px){
 	body{font-size:110%;}
-	#large{top:0;}
 }
 @media (min-height:1000px){
 	body{font-size:120%;}
