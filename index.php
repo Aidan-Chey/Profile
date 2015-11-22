@@ -12,14 +12,14 @@ if(isset($_POST['mail'])){
 	}
 
 	//Validate Name
-	if(empty($_POST['name']) && $_POST['name'] = " "){
+	if(empty($_POST['name']) || $_POST['name'] == " "){
 		$name = "[Name Not Specified]";
 	}else{
 		$name = html($_POST['name']);
 	}
 
 	//validate subject
-	if(empty($_POST['subject']) && $_POST['subject'] = " "){
+	if(empty($_POST['subject']) || $_POST['subject'] == " "){
 		$subject = "[Subject Not Specified]";
 	}else{
 		$subject = html($_POST['subject']);
@@ -29,10 +29,10 @@ if(isset($_POST['mail'])){
 	$message = "Message from $name at $email\r\n\r\n";
 
 	//validate message
-	if(empty($_POST['message']) && $_POST['message'] = " "){
+	if(empty($_POST['message']) || $_POST['message'] == " "){
 		$message .= "[Message Not Specified]";
 	}else{
-		$message .= html($_POST['contact']);
+		$message .= html($_POST['message']);
 	}
 
 	//validate human test

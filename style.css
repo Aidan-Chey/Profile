@@ -153,6 +153,7 @@ text-align: center;
 #portfolio section{
 text-align:center;
 padding:0;
+padding-bottom: 90px;
 -moz-box-sizing:border-box;
 -webkit-box-sizing:border-box;
 box-sizing:border-box;
@@ -265,14 +266,25 @@ margin:2vh 0;
 }
 form label+input,textarea{
 width:100%;
-max-width:100%;
 }
-textarea{height:80px;
+textarea{
+height:80px;
 }
-#field_5{width:75%;
+#field_5{
+width:75%;
 }
 .genericons{
 width:auto;
+}
+#contact form input {
+padding: 0 3px;
+line-height: 1.5em;
+}
+#contact form {
+padding: 0 5px;
+}
+form textarea {
+resize: horizontal;
 }
 footer{
 background-color:hsla(0,0%,0%,.75);
@@ -280,6 +292,7 @@ text-align:center;
 width:100%;
 position:fixed;
 bottom:0;
+font-size: 70%;
 }
 
 /* Dynamic Stuff */
